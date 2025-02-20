@@ -24,3 +24,16 @@ def play_again():
             return False
         else:
             print("plz type y/n")
+
+def magic_8_ball ():
+    print("welcome")
+    while True:
+        question = get_user_question()
+        if question is None:
+            break
+        response = get_random_response()
+        res(response)
+        if not play_again():
+            break
+
+magic_8_ball()
