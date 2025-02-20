@@ -5,7 +5,7 @@ responses = ["Yes, definetly" , " no , not now" , "ask again later", "It is cert
 
 def get_random_response():
     return random.choice(responses)
-    
+
 def get_user_question():
     question = input("ask the magical 8 ball a question (type 'exit' to quit):")
     if question.lower() == "exit":
